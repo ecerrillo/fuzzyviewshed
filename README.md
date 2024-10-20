@@ -24,13 +24,13 @@ Complutense University of Madrid
 
 Clone this repository:
 
-git clone https://github.com/your-username/fuzzy-viewshed-calculator.git
+`git clone https://github.com/your-username/fuzzy-viewshed-calculator.git`
 
-cd fuzzy-viewshed-calculator
+`cd fuzzy-viewshed-calculator`
 
 Install the required dependencies:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ## Usage
 See examples/example_usage.py for a demonstration of how to use the FuzzyViewshedCalculator.
