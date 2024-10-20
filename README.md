@@ -7,8 +7,11 @@ The program uses a DEM and a vector layer of polygons as input. The program iter
 ## Author
 
 Enrique Cerrillo-Cuenca
+
 Associate professor in Prehistory 
+
 Dpt. of Prehistory, Ancient History and Archaeology 
+
 Complutense University of Madrid
 
 ## Features
@@ -20,10 +23,13 @@ Complutense University of Madrid
 ## Installation
 
 Clone this repository:
+
 git clone https://github.com/your-username/fuzzy-viewshed-calculator.git
+
 cd fuzzy-viewshed-calculator
 
 Install the required dependencies:
+
 pip install -r requirements.txt
 
 ## Usage
