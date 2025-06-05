@@ -97,11 +97,14 @@ class FuzzyViewshedCalculator:
             points = list(geometry.exterior.coords)
             max_dist = FuzzyViewshedCalculator.calculate_max_distance(points)
         elif isinstance(geometry, MultiPolygon):
+            # Collect coordinates from all polygons to correctly
+            # calculate the diameter across polygon boundaries
+            all_points = []
             for polygon in geometry.geoms:
-                points = list(polygon.exterior.coords)
-                current_max = FuzzyViewshedCalculator.calculate_max_distance(points)
-                if current_max > max_dist:
-                    max_dist = current_max
+                all_points.extend(list(polygon.exterior.coords))
+
+            if all_points:
+                max_dist = FuzzyViewshedCalculator.calculate_max_distance(all_points)
         return max_dist
 
     @staticmethod
